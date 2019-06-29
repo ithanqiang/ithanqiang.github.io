@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/28/pjsip-编译中的点点滴滴/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/29/pjsip-编译中的点点滴滴/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="itleo">
@@ -334,7 +334,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/06/28/pjsip-编译中的点点滴滴/" class="post-title-link" itemprop="url">pjsip 编译中的点点滴滴</a>
+                <a href="/2019/06/29/pjsip-编译中的点点滴滴/" class="post-title-link" itemprop="url">pjsip 编译中的点点滴滴</a>
               
             
           </h1>
@@ -359,7 +359,7 @@
                 
               
 
-              <time title="创建时间：2019-06-28 17:03:06 / 修改时间：17:04:00" itemprop="dateCreated datePublished" datetime="2019-06-28T17:03:06+08:00">2019-06-28</time>
+              <time title="创建时间：2019-06-29 17:03:06 / 修改时间：21:03:02" itemprop="dateCreated datePublished" datetime="2019-06-29T17:03:06+08:00">2019-06-29</time>
             
 
             
@@ -418,8 +418,24 @@
       
         
           
-            <h2 id="pjsip编译遇到的磕磕绊绊"><a href="#pjsip编译遇到的磕磕绊绊" class="headerlink" title="pjsip编译遇到的磕磕绊绊"></a>pjsip编译遇到的磕磕绊绊</h2>
+            <p>
+              pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建
+ndk环境: 我使用的是android-ndk-r16b
+安卓平台: android-19
+确定编译的平台: armeabi-v7a
+
+export ANDROID_NDK_ROOT=/root/leo/an
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/29/pjsip-编译中的点点滴滴/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -578,20 +594,19 @@
       
         
           
-            <h2 id="hexo命令行使用"><a href="#hexo命令行使用" class="headerlink" title="hexo命令行使用"></a>hexo命令行使用</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="built_in">help</span> <span class="comment">#查看帮助</span></span><br><span class="line">hexo init <span class="comment">#初始化一个目录</span></span><br><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成网页，可以在 public 目录查看整个网站的文件</span></span><br><span class="line">hexo server <span class="comment">#本地预览，'Ctrl+C'关闭</span></span><br><span class="line">hexo deploy <span class="comment">#部署.deploy目录</span></span><br><span class="line">hexo clean <span class="comment">#清除缓存，**强烈建议每次执行命令前先清理缓存，每次部署前先删除 .deploy 文件夹**</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"标题"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="在-posts-目录下会生成文件标题-md"><a href="#在-posts-目录下会生成文件标题-md" class="headerlink" title="在 _posts 目录下会生成文件标题.md"></a>在 _posts 目录下会生成文件标题.md</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2015-07-30 07:56:29 <span class="comment">#发表日期，一般不改动</span></span><br><span class="line">categories: hexo <span class="comment">#文章文类</span></span><br><span class="line">tags: [hexo,github] <span class="comment">#文章标签，多于一项时用这种格式</span></span><br><span class="line">---</span><br><span class="line">正文，使用Markdown语法书写</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><h3 id="执行下列指令即可完成部署"><a href="#执行下列指令即可完成部署" class="headerlink" title="执行下列指令即可完成部署"></a>执行下列指令即可完成部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="以下提示说明部署成功"><a href="#以下提示说明部署成功" class="headerlink" title="以下提示说明部署成功"></a>以下提示说明部署成功</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[info] Deploy <span class="keyword">done</span>: git</span><br></pre></td></tr></table></figure>
-
-
+            <p>
+              hexo命令行使用常用命令hexo help #查看帮助hexo init #初始化一个目录hexo new "postName" #新建文章hexo new page "pageName" #新建页面hexo generate #生成网页，可以在 public 目录查看整个网站的文件hexo se
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/28/hexo-使用说明/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>

@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="pjsip编译遇到的磕磕绊绊">
+  <meta name="description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
 <meta name="keywords" content="pjsip">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pjsip 编译中的点点滴滴">
-<meta property="og:url" content="http://yoursite.com/2019/06/28/pjsip-编译中的点点滴滴/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/06/29/pjsip-编译中的点点滴滴/index.html">
 <meta property="og:site_name" content="技术小世界">
-<meta property="og:description" content="pjsip编译遇到的磕磕绊绊">
+<meta property="og:description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-28T09:04:00.155Z">
+<meta property="og:updated_time" content="2019-06-29T13:03:02.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pjsip 编译中的点点滴滴">
-<meta name="twitter:description" content="pjsip编译遇到的磕磕绊绊">
+<meta name="twitter:description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
 
 
 
@@ -113,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/06/28/pjsip-编译中的点点滴滴/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/29/pjsip-编译中的点点滴滴/">
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/28/pjsip-编译中的点点滴滴/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/29/pjsip-编译中的点点滴滴/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="itleo">
@@ -361,7 +361,7 @@
                 
               
 
-              <time title="创建时间：2019-06-28 17:03:06 / 修改时间：17:04:00" itemprop="dateCreated datePublished" datetime="2019-06-28T17:03:06+08:00">2019-06-28</time>
+              <time title="创建时间：2019-06-29 17:03:06 / 修改时间：21:03:02" itemprop="dateCreated datePublished" datetime="2019-06-29T17:03:06+08:00">2019-06-29</time>
             
 
             
@@ -418,7 +418,26 @@
       
 
       
-        <h2 id="pjsip编译遇到的磕磕绊绊"><a href="#pjsip编译遇到的磕磕绊绊" class="headerlink" title="pjsip编译遇到的磕磕绊绊"></a>pjsip编译遇到的磕磕绊绊</h2>
+        <h2 id="pjsip编译遇到的磕磕绊绊-pjproject-2-9"><a href="#pjsip编译遇到的磕磕绊绊-pjproject-2-9" class="headerlink" title="pjsip编译遇到的磕磕绊绊(pjproject-2.9)"></a>pjsip编译遇到的磕磕绊绊(pjproject-2.9)</h2><h3 id="PJSIP编译环境搭建"><a href="#PJSIP编译环境搭建" class="headerlink" title="PJSIP编译环境搭建"></a>PJSIP编译环境搭建</h3><ul>
+<li>ndk环境: 我使用的是android-ndk-r16b</li>
+<li>安卓平台: android-19</li>
+<li>确定编译的平台: armeabi-v7a</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ANDROID_NDK_ROOT=/root/leo/android-ndk-r16b</span><br><span class="line"><span class="built_in">export</span> APP_PLATFORM=<span class="string">"android-19"</span></span><br><span class="line"><span class="built_in">export</span> TARGET_ABI=armeabi-v7a </span><br><span class="line">./configure-android --use-ndk-cflags --<span class="built_in">enable</span>-shared --<span class="built_in">disable</span>-resample --<span class="built_in">disable</span>-sound --<span class="built_in">disable</span>-video --<span class="built_in">disable</span>-small-filter --<span class="built_in">disable</span>-large-filter --<span class="built_in">disable</span>-speex-aec --<span class="built_in">disable</span>-g711-codec --<span class="built_in">disable</span>-l16-codec --<span class="built_in">disable</span>-gsm-codec --<span class="built_in">disable</span>-g722-codec --<span class="built_in">disable</span>-g7221-codec --<span class="built_in">disable</span>-speex-codec --<span class="built_in">disable</span>-ilbc-codec --<span class="built_in">enable</span>-libsamplerate --<span class="built_in">enable</span>-resample-dll --<span class="built_in">disable</span>-sdl --<span class="built_in">disable</span>-ffmpeg --<span class="built_in">disable</span>-v4l2 --<span class="built_in">disable</span>-openh264 --<span class="built_in">disable</span>-ssl --<span class="built_in">disable</span>-opencore-amr --<span class="built_in">disable</span>-silk --<span class="built_in">disable</span>-opus --<span class="built_in">disable</span>-bcg729 --<span class="built_in">disable</span>-libyuv --<span class="built_in">disable</span>-libwebrtc</span><br></pre></td></tr></table></figure>
+
+<h3 id="PJSIP中核心配置文件-config-site-h"><a href="#PJSIP中核心配置文件-config-site-h" class="headerlink" title="PJSIP中核心配置文件(config_site.h)"></a>PJSIP中核心配置文件(config_site.h)</h3><p>  在编译源文件之前，pjlib/include/pj/下的config_site.h文件必须被创建（它可以只是一个空文件）<br>  config_site.h的定义<br>  config_site.h存放了一些和本地相关的配置<br>  请在下面文件中找到配置宏列表：</p>
+<ul>
+<li>PJLIB配置（pjlib/include/pj/config.h）– 这个配置是最重要的！</li>
+<li>PJLIB-UTIL配置（pjlib-util/include/pjlib-util/config.h）</li>
+<li>PJMEDIA配置（pjmedia/include/pjmedia/config.h）</li>
+<li>PJSIP配置（pjsip/include/pjsip/sip_config.h）</li>
+</ul>
+<h4 id="config-site-h-我的配置仅供参考"><a href="#config-site-h-我的配置仅供参考" class="headerlink" title="config_site.h 我的配置仅供参考"></a>config_site.h 我的配置仅供参考</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PJ_CONFIG_ANDROID 1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PJ_HAS_IFADDRS_H 0</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">#define PJ_CONFIG_MINIMAL_SIZE 0</span></span><br><span class="line"><span class="comment">#define PJ_CONFIG_MAXIMUM_SPEED 0</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pj/config_site_sample.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="开始编译吧-出问题再说"><a href="#开始编译吧-出问题再说" class="headerlink" title="开始编译吧-出问题再说"></a>开始编译吧-出问题再说</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make dep </span><br><span class="line">make</span><br></pre></td></tr></table></figure>
+
+<p>编译完成后会在对应的目录的lib文件下生成对应的动态库</p>
+
       
     </div>
 
@@ -488,7 +507,6 @@
           
 
   
-
 
 
         </div>
@@ -638,7 +656,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pjsip编译遇到的磕磕绊绊"><span class="nav-number">1.</span> <span class="nav-text">pjsip编译遇到的磕磕绊绊</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pjsip编译遇到的磕磕绊绊-pjproject-2-9"><span class="nav-number">1.</span> <span class="nav-text">pjsip编译遇到的磕磕绊绊(pjproject-2.9)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PJSIP编译环境搭建"><span class="nav-number">1.1.</span> <span class="nav-text">PJSIP编译环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PJSIP中核心配置文件-config-site-h"><span class="nav-number">1.2.</span> <span class="nav-text">PJSIP中核心配置文件(config_site.h)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-site-h-我的配置仅供参考"><span class="nav-number">1.2.1.</span> <span class="nav-text">config_site.h 我的配置仅供参考</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始编译吧-出问题再说"><span class="nav-number">1.3.</span> <span class="nav-text">开始编译吧-出问题再说</span></a></li></ol></li></ol></div>
             
 
           </div>
