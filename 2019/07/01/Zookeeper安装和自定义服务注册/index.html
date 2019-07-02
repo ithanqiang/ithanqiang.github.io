@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
-<meta name="keywords" content="pjsip">
+  <meta name="description" content="Zookeeper安装 系统要求 下载   自定义服务注册">
+<meta name="keywords" content="c&#x2F;c++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pjsip 编译中的点点滴滴">
-<meta property="og:url" content="http://www.itleo.tech/2019/06/29/pjsip-编译中的点点滴滴/index.html">
+<meta property="og:title" content="Zookeeper安装和自定义服务注册">
+<meta property="og:url" content="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/index.html">
 <meta property="og:site_name" content="技术小世界">
-<meta property="og:description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
+<meta property="og:description" content="Zookeeper安装 系统要求 下载   自定义服务注册">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T12:18:11.721Z">
+<meta property="og:updated_time" content="2019-07-01T10:10:17.710Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pjsip 编译中的点点滴滴">
-<meta name="twitter:description" content="pjsip编译遇到的磕磕绊绊(pjproject-2.9)PJSIP编译环境搭建 ndk环境: 我使用的是android-ndk-r16b 安卓平台: android-19 确定编译的平台: armeabi-v7a  1234export ANDROID_NDK_ROOT=/root/leo/android-ndk-r16bexport APP_PLATFORM=&quot;android-19&quot;">
+<meta name="twitter:title" content="Zookeeper安装和自定义服务注册">
+<meta name="twitter:description" content="Zookeeper安装 系统要求 下载   自定义服务注册">
 
 
 
@@ -113,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://www.itleo.tech/2019/06/29/pjsip-编译中的点点滴滴/">
+  <link rel="canonical" href="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>pjsip 编译中的点点滴滴 | 技术小世界</title>
+  <title>Zookeeper安装和自定义服务注册 | 技术小世界</title>
   
 
 
@@ -348,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.itleo.tech/2019/06/29/pjsip-编译中的点点滴滴/">
+    <link itemprop="mainEntityOfPage" href="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="itleo">
@@ -365,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">pjsip 编译中的点点滴滴
+          <h1 class="post-title" itemprop="name headline">Zookeeper安装和自定义服务注册
 
               
             
@@ -391,24 +391,12 @@
                 
               
 
-              <time title="创建时间：2019-06-29 17:03:06" itemprop="dateCreated datePublished" datetime="2019-06-29T17:03:06+08:00">2019-06-29</time>
+              <time title="创建时间：2019-07-01 17:02:20 / 修改时间：18:10:17" itemprop="dateCreated datePublished" datetime="2019-07-01T17:02:20+08:00">2019-07-01</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-30 20:18:11" itemprop="dateModified" datetime="2019-06-30T20:18:11+08:00">2019-06-30</time>
               
             
           </span>
@@ -425,7 +413,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/消息队列/" itemprop="url" rel="index"><span itemprop="name">消息队列</span></a></span>
 
                 
                 
@@ -460,26 +448,12 @@
       
 
       
-        <h2 id="pjsip编译遇到的磕磕绊绊-pjproject-2-9"><a href="#pjsip编译遇到的磕磕绊绊-pjproject-2-9" class="headerlink" title="pjsip编译遇到的磕磕绊绊(pjproject-2.9)"></a>pjsip编译遇到的磕磕绊绊(pjproject-2.9)</h2><h3 id="PJSIP编译环境搭建"><a href="#PJSIP编译环境搭建" class="headerlink" title="PJSIP编译环境搭建"></a>PJSIP编译环境搭建</h3><ul>
-<li>ndk环境: 我使用的是android-ndk-r16b</li>
-<li>安卓平台: android-19</li>
-<li>确定编译的平台: armeabi-v7a</li>
+        <h2 id="Zookeeper安装"><a href="#Zookeeper安装" class="headerlink" title="Zookeeper安装"></a>Zookeeper安装</h2><ul>
+<li>系统要求</li>
+<li>下载</li>
+<li></li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ANDROID_NDK_ROOT=/root/leo/android-ndk-r16b</span><br><span class="line"><span class="built_in">export</span> APP_PLATFORM=<span class="string">"android-19"</span></span><br><span class="line"><span class="built_in">export</span> TARGET_ABI=armeabi-v7a </span><br><span class="line">./configure-android --use-ndk-cflags --<span class="built_in">enable</span>-shared --<span class="built_in">disable</span>-resample --<span class="built_in">disable</span>-sound --<span class="built_in">disable</span>-video --<span class="built_in">disable</span>-small-filter --<span class="built_in">disable</span>-large-filter --<span class="built_in">disable</span>-speex-aec --<span class="built_in">disable</span>-g711-codec --<span class="built_in">disable</span>-l16-codec --<span class="built_in">disable</span>-gsm-codec --<span class="built_in">disable</span>-g722-codec --<span class="built_in">disable</span>-g7221-codec --<span class="built_in">disable</span>-speex-codec --<span class="built_in">disable</span>-ilbc-codec --<span class="built_in">enable</span>-libsamplerate --<span class="built_in">enable</span>-resample-dll --<span class="built_in">disable</span>-sdl --<span class="built_in">disable</span>-ffmpeg --<span class="built_in">disable</span>-v4l2 --<span class="built_in">disable</span>-openh264 --<span class="built_in">disable</span>-ssl --<span class="built_in">disable</span>-opencore-amr --<span class="built_in">disable</span>-silk --<span class="built_in">disable</span>-opus --<span class="built_in">disable</span>-bcg729 --<span class="built_in">disable</span>-libyuv --<span class="built_in">disable</span>-libwebrtc</span><br></pre></td></tr></table></figure>
-
-<h3 id="PJSIP中核心配置文件-config-site-h"><a href="#PJSIP中核心配置文件-config-site-h" class="headerlink" title="PJSIP中核心配置文件(config_site.h)"></a>PJSIP中核心配置文件(config_site.h)</h3><p>  在编译源文件之前，pjlib/include/pj/下的config_site.h文件必须被创建（它可以只是一个空文件）<br>  config_site.h的定义<br>  config_site.h存放了一些和本地相关的配置<br>  请在下面文件中找到配置宏列表：</p>
-<ul>
-<li>PJLIB配置（pjlib/include/pj/config.h）– 这个配置是最重要的！</li>
-<li>PJLIB-UTIL配置（pjlib-util/include/pjlib-util/config.h）</li>
-<li>PJMEDIA配置（pjmedia/include/pjmedia/config.h）</li>
-<li>PJSIP配置（pjsip/include/pjsip/sip_config.h）</li>
-</ul>
-<h4 id="config-site-h-我的配置仅供参考"><a href="#config-site-h-我的配置仅供参考" class="headerlink" title="config_site.h 我的配置仅供参考"></a>config_site.h 我的配置仅供参考</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PJ_CONFIG_ANDROID 1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PJ_HAS_IFADDRS_H 0</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">#define PJ_CONFIG_MINIMAL_SIZE 0</span></span><br><span class="line"><span class="comment">#define PJ_CONFIG_MAXIMUM_SPEED 0</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pj/config_site_sample.h&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h3 id="开始编译吧-出问题再说"><a href="#开始编译吧-出问题再说" class="headerlink" title="开始编译吧-出问题再说"></a>开始编译吧-出问题再说</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make dep </span><br><span class="line">make</span><br></pre></td></tr></table></figure>
-
-<p>编译完成后会在对应的目录的lib文件下生成对应的动态库</p>
-
+<h2 id="自定义服务注册"><a href="#自定义服务注册" class="headerlink" title="自定义服务注册"></a>自定义服务注册</h2>
       
     </div>
 
@@ -529,7 +503,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/pjsip/" rel="tag"><i class="fa fa-tag"></i> pjsip</a>
+            <a href="/tags/c-c/" rel="tag"><i class="fa fa-tag"></i> c/c++</a>
           
         </div>
       
@@ -542,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/28/hexo-使用说明/" rel="next" title="hexo 使用说明">
-                <i class="fa fa-chevron-left"></i> hexo 使用说明
+              <a href="/2019/06/29/pjsip-编译中的点点滴滴/" rel="next" title="pjsip 编译中的点点滴滴">
+                <i class="fa fa-chevron-left"></i> pjsip 编译中的点点滴滴
               </a>
             
           </div>
@@ -551,10 +525,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/01/Zookeeper安装和自定义服务注册/" rel="prev" title="Zookeeper安装和自定义服务注册">
-                Zookeeper安装和自定义服务注册 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -730,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pjsip编译遇到的磕磕绊绊-pjproject-2-9"><span class="nav-number">1.</span> <span class="nav-text">pjsip编译遇到的磕磕绊绊(pjproject-2.9)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PJSIP编译环境搭建"><span class="nav-number">1.1.</span> <span class="nav-text">PJSIP编译环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PJSIP中核心配置文件-config-site-h"><span class="nav-number">1.2.</span> <span class="nav-text">PJSIP中核心配置文件(config_site.h)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-site-h-我的配置仅供参考"><span class="nav-number">1.2.1.</span> <span class="nav-text">config_site.h 我的配置仅供参考</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始编译吧-出问题再说"><span class="nav-number">1.3.</span> <span class="nav-text">开始编译吧-出问题再说</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Zookeeper安装"><span class="nav-number">1.</span> <span class="nav-text">Zookeeper安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义服务注册"><span class="nav-number">2.</span> <span class="nav-text">自定义服务注册</span></a></li></ol></div>
             
 
           </div>
