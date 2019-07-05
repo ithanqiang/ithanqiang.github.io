@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="Zookeeper安装 系统要求开发环境我使用的MacOS, linux 应该是绝对支持的，其他不晓得。 下载 配置及其运行1234567891011121314151617# conf目录下提供了配置案例zoo_sample.cfg，要将zk运行起来，需要将其名称修改为zoo.cfg# tickTime 心跳时间# clientPort  监听的端口号# dataDir=～./zookeep">
+  <meta name="description" content="jwsmtp编译安装 系统要求(全平台)  下载  编译安装 12345# 使用的版本 1.32.15  好像好久没维护了，不过这个也没什么维护的。# mac 和 linux 如下编译  Windows 自行解决./configuremakesudo make install    jwsmtp发邮件demo(同志们直接上代码，亲测有效)  12345678910111213141516">
 <meta name="keywords" content="C&#x2F;C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Zookeeper安装和自定义服务注册">
-<meta property="og:url" content="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/index.html">
+<meta property="og:title" content="一个C++邮件发送库jwsmtp">
+<meta property="og:url" content="http://www.itleo.tech/2019/07/05/一个C-邮件发送库jwsmtp/index.html">
 <meta property="og:site_name" content="技术小世界">
-<meta property="og:description" content="Zookeeper安装 系统要求开发环境我使用的MacOS, linux 应该是绝对支持的，其他不晓得。 下载 配置及其运行1234567891011121314151617# conf目录下提供了配置案例zoo_sample.cfg，要将zk运行起来，需要将其名称修改为zoo.cfg# tickTime 心跳时间# clientPort  监听的端口号# dataDir=～./zookeep">
+<meta property="og:description" content="jwsmtp编译安装 系统要求(全平台)  下载  编译安装 12345# 使用的版本 1.32.15  好像好久没维护了，不过这个也没什么维护的。# mac 和 linux 如下编译  Windows 自行解决./configuremakesudo make install    jwsmtp发邮件demo(同志们直接上代码，亲测有效)  12345678910111213141516">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-05T07:03:59.710Z">
+<meta property="og:updated_time" content="2019-07-05T07:04:27.342Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zookeeper安装和自定义服务注册">
-<meta name="twitter:description" content="Zookeeper安装 系统要求开发环境我使用的MacOS, linux 应该是绝对支持的，其他不晓得。 下载 配置及其运行1234567891011121314151617# conf目录下提供了配置案例zoo_sample.cfg，要将zk运行起来，需要将其名称修改为zoo.cfg# tickTime 心跳时间# clientPort  监听的端口号# dataDir=～./zookeep">
+<meta name="twitter:title" content="一个C++邮件发送库jwsmtp">
+<meta name="twitter:description" content="jwsmtp编译安装 系统要求(全平台)  下载  编译安装 12345# 使用的版本 1.32.15  好像好久没维护了，不过这个也没什么维护的。# mac 和 linux 如下编译  Windows 自行解决./configuremakesudo make install    jwsmtp发邮件demo(同志们直接上代码，亲测有效)  12345678910111213141516">
 
 
 
@@ -113,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/">
+  <link rel="canonical" href="http://www.itleo.tech/2019/07/05/一个C-邮件发送库jwsmtp/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>Zookeeper安装和自定义服务注册 | 技术小世界</title>
+  <title>一个C++邮件发送库jwsmtp | 技术小世界</title>
   
 
 
@@ -355,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/">
+    <link itemprop="mainEntityOfPage" href="http://www.itleo.tech/2019/07/05/一个C-邮件发送库jwsmtp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="itleo">
@@ -372,7 +372,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Zookeeper安装和自定义服务注册
+          <h1 class="post-title" itemprop="name headline">一个C++邮件发送库jwsmtp
 
               
             
@@ -398,24 +398,12 @@
                 
               
 
-              <time title="创建时间：2019-07-01 17:02:20" itemprop="dateCreated datePublished" datetime="2019-07-01T17:02:20+08:00">2019-07-01</time>
+              <time title="创建时间：2019-07-05 14:36:08 / 修改时间：15:04:27" itemprop="dateCreated datePublished" datetime="2019-07-05T14:36:08+08:00">2019-07-05</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-07-05 15:03:59" itemprop="dateModified" datetime="2019-07-05T15:03:59+08:00">2019-07-05</time>
               
             
           </span>
@@ -432,7 +420,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/消息队列/" itemprop="url" rel="index"><span itemprop="name">消息队列</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/中介编程/" itemprop="url" rel="index"><span itemprop="name">中介编程</span></a></span>
 
                 
                 
@@ -467,20 +455,19 @@
       
 
       
-        <h2 id="Zookeeper安装"><a href="#Zookeeper安装" class="headerlink" title="Zookeeper安装"></a>Zookeeper安装</h2><ul>
-<li>系统要求<br>开发环境我使用的MacOS, linux 应该是绝对支持的，其他不晓得。</li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/apache/zookeeper/zookeeper-3.4.14/" target="_blank" rel="noopener">下载</a></li>
-<li>配置及其运行<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># conf目录下提供了配置案例zoo_sample.cfg，要将zk运行起来，需要将其名称修改为zoo.cfg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># tickTime 心跳时间</span></span><br><span class="line"><span class="comment"># clientPort  监听的端口号</span></span><br><span class="line"><span class="comment"># dataDir=～./zookeeper/conf/dataDir 在conf下创建了dataDir保存 估计是些数据缓存，无所谓</span></span><br><span class="line"><span class="comment"># 自定义配置好九可以运行了 </span></span><br><span class="line">  ./zkServer.sh start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 出现错误了 错误: 找不到或无法加载主类 org.apache.zookeeper.server.quorum.QuorumPeerMain</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 我用的3.5.5版本 最先的版本没有jar包，反手用上一个版本3.4.14 问题解决了</span></span><br><span class="line"></span><br><span class="line">./zkServer.sh status</span><br><span class="line"></span><br><span class="line"><span class="comment"># ZooKeeper JMX enabled by default</span></span><br><span class="line"><span class="comment"># Using config: /Users/leo/Leo/IM/zookeeper-3.4.14/bin/../conf/zoo.cfg</span></span><br><span class="line"><span class="comment"># Mode: standalone</span></span><br></pre></td></tr></table></figure>
-
+        <h2 id="jwsmtp编译安装"><a href="#jwsmtp编译安装" class="headerlink" title="jwsmtp编译安装"></a>jwsmtp编译安装</h2><ul>
+<li><p>系统要求(全平台)</p>
+</li>
+<li><p><a href="http://sourceforge.net/projects/jwsmtp/" target="_blank" rel="noopener">下载</a></p>
+</li>
+<li><p>编译安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用的版本 1.32.15  好像好久没维护了，不过这个也没什么维护的。</span></span><br><span class="line"><span class="comment"># mac 和 linux 如下编译  Windows 自行解决</span></span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<ul>
-<li>编译(重点来啦，这次就是想搞他)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入c源码的目录 这个就是访问zk 的client</span></span><br><span class="line"><span class="built_in">cd</span> zookeeper-client/zookeeper-client-c</span><br></pre></td></tr></table></figure>
+<h2 id="jwsmtp发邮件demo-同志们直接上代码，亲测有效"><a href="#jwsmtp发邮件demo-同志们直接上代码，亲测有效" class="headerlink" title="jwsmtp发邮件demo(同志们直接上代码，亲测有效)"></a>jwsmtp发邮件demo(同志们直接上代码，亲测有效)</h2>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"jwsmtp/jwsmtp.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MailToolObject</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    MailToolObject(<span class="built_in">std</span>::<span class="built_in">string</span> sender_email, <span class="built_in">std</span>::<span class="built_in">string</span> sender_password, <span class="built_in">std</span>::<span class="built_in">string</span> sender_server)&#123;</span><br><span class="line">        m_sender_email = sender_email;</span><br><span class="line">        m_sender_password = sender_password;</span><br><span class="line">        m_sender_server = sender_server;</span><br><span class="line">        m_mailer = <span class="keyword">new</span> jwsmtp::mailer(<span class="string">""</span>, m_sender_email.c_str(), <span class="string">""</span>,</span><br><span class="line">                        <span class="string">""</span>, sender_server.c_str(),</span><br><span class="line">                        jwsmtp::mailer::SMTP_PORT, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ～MailToolObject()&#123;</span><br><span class="line">        <span class="keyword">if</span>(!m_mailer)&#123;</span><br><span class="line">            <span class="keyword">delete</span> m_mailer;</span><br><span class="line">            m_mailer = <span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">sendMail</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">string</span> sendTitle, <span class="built_in">std</span>::<span class="built_in">string</span> sendContent, <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt; recvEmailUser)</span></span>&#123;</span><br><span class="line">        <span class="comment">//添加多个接收者</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;recvEmailUser.size();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            m_mailer-&gt;addrecipient(recvEmailUser[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置标题</span></span><br><span class="line">        m_mailer-&gt;setsubject(sendTitle);</span><br><span class="line">        <span class="comment">// 设置内容</span></span><br><span class="line">        m_mailer-&gt;setmessage(sendContent);</span><br><span class="line">        <span class="comment">//auth认证是PLAIN模式</span></span><br><span class="line">        m_mailer-&gt;authtype(jwsmtp::mailer::PLAIN);</span><br><span class="line">        <span class="comment">//用户名</span></span><br><span class="line">        m_mailer-&gt;username(m_sender_email);</span><br><span class="line">        <span class="comment">//密码</span></span><br><span class="line">        m_mailer-&gt;password(m_sender_password);</span><br><span class="line">        m_mailer-&gt;send(); <span class="comment">// 同步模式 </span></span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">string</span> response = m_mailer-&gt;response();</span><br><span class="line">        <span class="comment">// 获取返回验证码</span></span><br><span class="line">        <span class="keyword">int</span> res = atoi(<span class="built_in">std</span>::<span class="built_in">string</span>(response.c_str(), <span class="number">3</span>).c_str());</span><br><span class="line">        <span class="keyword">if</span>(res == <span class="number">250</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">std</span> ::<span class="built_in">cout</span> &lt;&lt; m_mailer-&gt;response() &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    jwsmtp::mailer * m_mailer;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> m_sender_email;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> m_sender_password;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> m_sender_server;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="function">MailToolObject <span class="title">mailToolObject</span><span class="params">(<span class="string">"xxxxx@qq.com"</span>, <span class="string">"xxxxxxx"</span>, <span class="string">"smtp.qq.com"</span>)</span></span>;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt; recvEmailUser;</span><br><span class="line">    recvEmailUser.push_back(<span class="string">"xxxxxxx@qq.com"</span>);</span><br><span class="line">    recvEmailUser.push_back(<span class="string">"1111111@qq.com"</span>);</span><br><span class="line">    <span class="keyword">bool</span> res = mailToolObject.sendMail(<span class="string">"标题"</span>, <span class="string">"内容"</span>, recvEmailUser);</span><br><span class="line">    <span class="keyword">if</span>(res)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"send email success!\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<h2 id="自定义服务注册"><a href="#自定义服务注册" class="headerlink" title="自定义服务注册"></a>自定义服务注册</h2><h2 id="监听服务的节点变化"><a href="#监听服务的节点变化" class="headerlink" title="监听服务的节点变化"></a>监听服务的节点变化</h2>
+<h2 id="这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就-GO-GO-GO"><a href="#这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就-GO-GO-GO" class="headerlink" title="这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就 @GO GO GO"></a>这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就 <a href="https://github.com/ithanqiang" target="_blank" rel="noopener">@GO GO GO</a></h2>
       
     </div>
 
@@ -538,7 +525,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/" title="Zookeeper安装和自定义服务注册">http://www.itleo.tech/2019/07/01/Zookeeper安装和自定义服务注册/</a>
+    <a href="http://www.itleo.tech/2019/07/05/一个C-邮件发送库jwsmtp/" title="一个C++邮件发送库jwsmtp">http://www.itleo.tech/2019/07/05/一个C-邮件发送库jwsmtp/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -571,8 +558,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/29/pjsip-编译中的点点滴滴/" rel="next" title="pjsip 编译中的点点滴滴">
-                <i class="fa fa-chevron-left"></i> pjsip 编译中的点点滴滴
+              <a href="/2019/07/01/Zookeeper安装和自定义服务注册/" rel="next" title="Zookeeper安装和自定义服务注册">
+                <i class="fa fa-chevron-left"></i> Zookeeper安装和自定义服务注册
               </a>
             
           </div>
@@ -580,10 +567,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/05/一个C-邮件发送库jwsmtp/" rel="prev" title="一个C++邮件发送库jwsmtp">
-                一个C++邮件发送库jwsmtp <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -763,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Zookeeper安装"><span class="nav-number">1.</span> <span class="nav-text">Zookeeper安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义服务注册"><span class="nav-number">2.</span> <span class="nav-text">自定义服务注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监听服务的节点变化"><span class="nav-number">3.</span> <span class="nav-text">监听服务的节点变化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jwsmtp编译安装"><span class="nav-number">1.</span> <span class="nav-text">jwsmtp编译安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jwsmtp发邮件demo-同志们直接上代码，亲测有效"><span class="nav-number">2.</span> <span class="nav-text">jwsmtp发邮件demo(同志们直接上代码，亲测有效)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就-GO-GO-GO"><span class="nav-number">3.</span> <span class="nav-text">这些都是最简单的操作，后期我会把邮件的其他操作提交到github上，有兴趣就 @GO GO GO</span></a></li></ol></div>
             
 
           </div>
